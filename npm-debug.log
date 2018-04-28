@@ -1,0 +1,474 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/bin/npm', 'install', '-g', 'git-it' ]
+info using npm@1.1.4
+info using node@v0.6.12
+verbose config file /home/vagrant/.npmrc
+verbose config file /usr/etc/npmrc
+verbose config file /usr/share/npm/npmrc
+verbose cache add [ 'git-it', null ]
+silly cache add: name, spec, args [ undefined, 'git-it', [ 'git-it', null ] ]
+verbose parsed url { pathname: 'git-it', path: 'git-it', href: 'git-it' }
+verbose addNamed [ 'git-it', '' ]
+verbose addNamed [ null, '' ]
+silly name, range, hasData [ 'git-it', '', false ]
+verbose raw, before any munging git-it
+verbose url resolving [ 'http://registry.npmjs.org/', './git-it' ]
+verbose url resolved http://registry.npmjs.org/git-it
+verbose etag "55fce8f3-9b30"
+http GET http://registry.npmjs.org/git-it
+http 304 http://registry.npmjs.org/git-it
+silly get cb [ 304,
+silly get cb   { date: 'Sat, 28 Apr 2018 08:36:40 GMT',
+silly get cb     via: '1.1 varnish',
+silly get cb     'cache-control': 'max-age=300',
+silly get cb     etag: '"55fce8f3-9b30"',
+silly get cb     age: '4930',
+silly get cb     connection: 'keep-alive',
+silly get cb     'x-served-by': 'cache-sea1022-SEA',
+silly get cb     'x-cache': 'HIT',
+silly get cb     'x-cache-hits': '2',
+silly get cb     'x-timer': 'S1524904601.503546,VS0,VE0',
+silly get cb     vary: 'Accept-Encoding, Accept' } ]
+verbose etag git-it from cache
+silly name, range, hasData 2 [ 'git-it', '', true ]
+silly versions [ 'git-it',
+silly versions   [ '0.0.0',
+silly versions     '1.0.1',
+silly versions     '1.0.2',
+silly versions     '1.0.4',
+silly versions     '1.0.5',
+silly versions     '1.0.6',
+silly versions     '1.1.7',
+silly versions     '1.1.8',
+silly versions     '1.1.9',
+silly versions     '1.2.0',
+silly versions     '1.2.1',
+silly versions     '1.2.2',
+silly versions     '1.2.3',
+silly versions     '1.2.4',
+silly versions     '1.3.4',
+silly versions     '1.3.5',
+silly versions     '1.3.6',
+silly versions     '1.3.7',
+silly versions     '1.3.8',
+silly versions     '1.3.9',
+silly versions     '1.4.0',
+silly versions     '1.5.0',
+silly versions     '1.6.0',
+silly versions     '1.6.2',
+silly versions     '1.6.3',
+silly versions     '1.6.4',
+silly versions     '1.6.5',
+silly versions     '1.6.7',
+silly versions     '1.6.8',
+silly versions     '1.6.9' ] ]
+verbose bin dist [ '0.6-ares1.7.5-evundefined-openssl1.0.1-v83.7.12.22-linux-ia32-3.2.0-23-generic-pae',
+verbose bin dist   { shasum: 'bc734ced83adc1c8a7d4f22298bc84578bfb71a6',
+verbose bin dist     tarball: 'https://registry.npmjs.org/git-it/-/git-it-1.6.9.tgz' } ]
+verbose caching /home/vagrant/.npm/git-it/1.6.9/package/package.json
+verbose loadDefaults git-it@1.6.9
+silly resolved [ { name: 'git-it',
+silly resolved     version: '1.6.9',
+silly resolved     description: 'Terminal app for learning Git and GitHub',
+silly resolved     main: 'index.js',
+silly resolved     bin: { 'git-it': './git-it.js' },
+silly resolved     scripts: 
+silly resolved      { build: 'node guide/buildpages.js && node guide/buildpages.js zhtw',
+silly resolved        'build-english': 'node guide/buildpages.js',
+silly resolved        'build-zhtw': 'node guide/buildpages.js zhtw',
+silly resolved        'copy-guide': 'cp -r ./guide ./.guide',
+silly resolved        'git-co': 'git checkout gh-pages && git reset --hard origin/gh-pages',
+silly resolved        'paste-guide': 'cp -r ./.guide/* .. && rm -rf ./.guide',
+silly resolved        'git-stage': 'npm run copy-guide && npm run git-co && npm run paste-guide',
+silly resolved        'git-commit': 'git add -A . && git commit -a -m \'gh-pages update\'',
+silly resolved        'git-push': 'git push origin gh-pages --force && git checkout master',
+silly resolved        deploy: 'npm run git-stage && npm run git-commit && npm run git-push' },
+silly resolved     repository: { type: 'git', url: 'git://github.com/jlord/git-it.git' },
+silly resolved     author: { name: 'Jessica Lord' },
+silly resolved     license: 'BSD-2-Clause',
+silly resolved     bugs: { url: 'https://github.com/jlord/git-it/issues' },
+silly resolved     dependencies: 
+silly resolved      { 'concat-stream': '~1.2.1',
+silly resolved        ecstatic: '^0.5.4',
+silly resolved        'github-oauth': '0.0.4',
+silly resolved        glob: '^3.2.11',
+silly resolved        handlebars: '^2.0.0-alpha.4',
+silly resolved        marked: '^0.3.2',
+silly resolved        request: '~2.30.0',
+silly resolved        'workshopper-jlord': '^0.0.6',
+silly resolved        cheerio: '~0.17.0' },
+silly resolved     _id: 'git-it@1.6.9',
+silly resolved     devDependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.4',
+silly resolved     _nodeVersion: 'v0.6.12',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'git-it' } ]
+info into /usr/local/lib git-it@1.6.9
+info installOne git-it@1.6.9
+verbose from cache /home/vagrant/.npm/git-it/1.6.9/package/package.json
+info unbuild /usr/local/lib/node_modules/git-it
+verbose mkdir (expected) error ENOENT, no such file or directory '/usr/local/lib/node_modules/___git-it.npm'
+verbose mkdir done: /usr/local/lib/node_modules/___git-it.npm 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /usr/local/lib/node_modules/git-it
+silly gunzTarPerm modes [ '755', '644' ]
+silly afterUntar ok
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/docu.md
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/LICENSE
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/help.txt
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/README-zhtw.md
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/README.md
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/ghcc.png
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/.npmignore
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/git-it.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/CONTRIBUTING.md
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide-ss.png
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/TROUBLESHOOT.md
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/package.json
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/menu.json
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/git-it-ss.png
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/txtToHTML.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/commit_to_it
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/commit_to_it/problem.txt
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/commit_to_it/verify.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/commit_to_it/setup.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/commit_to_it/solution.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/repository
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/repository/problem.txt
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/repository/verify.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/repository/setup.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/repository/solution.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/its_a_small_world
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/its_a_small_world/problem.txt
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/its_a_small_world/verify.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/its_a_small_world/setup.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/its_a_small_world/solution.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/requesting_you_pull_please
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/requesting_you_pull_please/problem.txt
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/requesting_you_pull_please/verify.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/requesting_you_pull_please/setup.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/requesting_you_pull_please/solution.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/get_git
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/get_git/problem.txt
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/get_git/verify.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/get_git/setup.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/get_git/solution.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/forks_and_clones
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/forks_and_clones/problem.txt
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/forks_and_clones/verify.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/forks_and_clones/setup.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/forks_and_clones/solution.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/pull_never_out_of_date
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/pull_never_out_of_date/problem.txt
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/pull_never_out_of_date/verify.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/pull_never_out_of_date/setup.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/pull_never_out_of_date/solution.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/githubbin
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/githubbin/problem.txt
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/githubbin/verify.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/githubbin/setup.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/githubbin/solution.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/branches_arent_just_for_birds
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/branches_arent_just_for_birds/problem.txt
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/branches_arent_just_for_birds/verify.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/branches_arent_just_for_birds/setup.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/branches_arent_just_for_birds/solution.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/merge_tada
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/merge_tada/problem.txt
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/merge_tada/verify.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/merge_tada/setup.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/merge_tada/solution.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/remote_control
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/remote_control/problem.txt
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/remote_control/verify.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/remote_control/setup.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/problems/remote_control/solution.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/about.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/locale-zhtw.json
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/index-zhtw.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/dictionary.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/index.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/README.md
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/buildpages.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/resources.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/layout.hbs
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/translate-locale.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/raw-content-zhtw
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/raw-content-zhtw/5_remote_control.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/raw-content-zhtw/8_its_a_small_world.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/raw-content-zhtw/10_requesting_you_pull_please.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/raw-content-zhtw/4_githubbin.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/raw-content-zhtw/1_get_git.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/raw-content-zhtw/9_pull_never_out_of_date.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/raw-content-zhtw/11_merge_tada.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/raw-content-zhtw/3_commit_to_it.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/raw-content-zhtw/2_repository.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/raw-content-zhtw/6_forks_and_clones.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/raw-content-zhtw/7_branches_arent_just_for_birds.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/challenges
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/challenges/merge_tada.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/challenges/requesting_you_pull_please.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/challenges/branches_arent_just_for_birds.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/challenges/commit_to_it.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/challenges/its_a_small_world.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/challenges/forks_and_clones.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/challenges/pull_never_out_of_date.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/challenges/repository.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/challenges/get_git.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/challenges/remote_control.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/challenges/githubbin.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/partials
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/partials/footer.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/partials/header.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/challenges-zhtw
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/challenges-zhtw/merge_tada.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/challenges-zhtw/requesting_you_pull_please.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/challenges-zhtw/branches_arent_just_for_birds.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/challenges-zhtw/commit_to_it.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/challenges-zhtw/its_a_small_world.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/challenges-zhtw/forks_and_clones.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/challenges-zhtw/pull_never_out_of_date.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/challenges-zhtw/repository.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/challenges-zhtw/get_git.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/challenges-zhtw/remote_control.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/challenges-zhtw/githubbin.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/raw-content
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/raw-content/5_remote_control.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/raw-content/8_its_a_small_world.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/raw-content/10_requesting_you_pull_please.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/raw-content/4_githubbin.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/raw-content/1_get_git.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/raw-content/9_pull_never_out_of_date.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/raw-content/11_merge_tada.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/raw-content/3_commit_to_it.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/raw-content/2_repository.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/raw-content/6_forks_and_clones.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/raw-content/7_branches_arent_just_for_birds.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/assets
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/assets/css
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/assets/css/style.css
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/assets/imgs
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/assets/imgs/favicon.png
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/assets/imgs/reporobot.png
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/assets/imgs/branches.png
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/assets/imgs/clone.png
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/assets/imgs/pull.png
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/assets/imgs/pullrequest.png
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/assets/imgs/repos.png
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/assets/imgs/remotes.png
+silly asyncMap in gTP /usr/local/lib/node_modules/___git-it.npm/package/guide/assets/imgs/favicon-p.png
+silly chmod package 755
+verbose gunzed /usr/local/lib/node_modules/___git-it.npm/package
+verbose rm'ed /usr/local/lib/node_modules/git-it
+verbose renamed [ '/usr/local/lib/node_modules/___git-it.npm/package',
+verbose renamed   '/usr/local/lib/node_modules/git-it' ]
+verbose caching /usr/local/lib/node_modules/git-it/package.json
+verbose loadDefaults git-it@1.6.9
+info preinstall git-it@1.6.9
+verbose from cache /usr/local/lib/node_modules/git-it/package.json
+verbose readDependencies: using package.json deps
+verbose from cache /usr/local/lib/node_modules/git-it/package.json
+verbose readDependencies: using package.json deps
+verbose cache add [ 'concat-stream@~1.2.1', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'concat-stream@~1.2.1',
+silly cache add: name, spec, args   [ 'concat-stream@~1.2.1', null ] ]
+verbose parsed url { pathname: 'concat-stream@~1.2.1',
+verbose parsed url   path: 'concat-stream@~1.2.1',
+verbose parsed url   href: 'concat-stream@~1.2.1' }
+silly cache add: name, spec, args [ 'concat-stream', '~1.2.1', [ 'concat-stream', '~1.2.1' ] ]
+verbose parsed url { pathname: '~1.2.1', path: '~1.2.1', href: '~1.2.1' }
+verbose addNamed [ 'concat-stream', '~1.2.1' ]
+verbose addNamed [ null, '>=1.2.1- <1.3.0-' ]
+silly name, range, hasData [ 'concat-stream', '>=1.2.1- <1.3.0-', false ]
+verbose cache add [ 'ecstatic@^0.5.4', null ]
+silly cache add: name, spec, args [ undefined, 'ecstatic@^0.5.4', [ 'ecstatic@^0.5.4', null ] ]
+verbose parsed url { pathname: 'ecstatic@^0.5.4',
+verbose parsed url   path: 'ecstatic@^0.5.4',
+verbose parsed url   href: 'ecstatic@^0.5.4' }
+silly cache add: name, spec, args [ 'ecstatic', '^0.5.4', [ 'ecstatic', '^0.5.4' ] ]
+verbose parsed url { pathname: '^0.5.4', path: '^0.5.4', href: '^0.5.4' }
+verbose addNamed [ 'ecstatic', '^0.5.4' ]
+verbose addNamed [ null, null ]
+info addNameTag [ 'ecstatic', '^0.5.4' ]
+verbose cache add [ 'github-oauth@0.0.4', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'github-oauth@0.0.4',
+silly cache add: name, spec, args   [ 'github-oauth@0.0.4', null ] ]
+verbose parsed url { pathname: 'github-oauth@0.0.4',
+verbose parsed url   path: 'github-oauth@0.0.4',
+verbose parsed url   href: 'github-oauth@0.0.4' }
+silly cache add: name, spec, args [ 'github-oauth', '0.0.4', [ 'github-oauth', '0.0.4' ] ]
+verbose parsed url { pathname: '0.0.4', path: '0.0.4', href: '0.0.4' }
+verbose addNamed [ 'github-oauth', '0.0.4' ]
+verbose addNamed [ '0.0.4', '0.0.4' ]
+verbose raw, before any munging ecstatic
+verbose url resolving [ 'http://registry.npmjs.org/', './ecstatic' ]
+verbose url resolved http://registry.npmjs.org/ecstatic
+http GET http://registry.npmjs.org/ecstatic
+verbose cache add [ 'glob@^3.2.11', null ]
+silly cache add: name, spec, args [ undefined, 'glob@^3.2.11', [ 'glob@^3.2.11', null ] ]
+verbose parsed url { pathname: 'glob@^3.2.11',
+verbose parsed url   path: 'glob@^3.2.11',
+verbose parsed url   href: 'glob@^3.2.11' }
+silly cache add: name, spec, args [ 'glob', '^3.2.11', [ 'glob', '^3.2.11' ] ]
+verbose parsed url { pathname: '^3.2.11', path: '^3.2.11', href: '^3.2.11' }
+verbose addNamed [ 'glob', '^3.2.11' ]
+verbose addNamed [ null, null ]
+info addNameTag [ 'glob', '^3.2.11' ]
+verbose cache add [ 'handlebars@^2.0.0-alpha.4', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'handlebars@^2.0.0-alpha.4',
+silly cache add: name, spec, args   [ 'handlebars@^2.0.0-alpha.4', null ] ]
+verbose parsed url { pathname: 'handlebars@^2.0.0-alpha.4',
+verbose parsed url   path: 'handlebars@^2.0.0-alpha.4',
+verbose parsed url   href: 'handlebars@^2.0.0-alpha.4' }
+silly cache add: name, spec, args [ 'handlebars',
+silly cache add: name, spec, args   '^2.0.0-alpha.4',
+silly cache add: name, spec, args   [ 'handlebars', '^2.0.0-alpha.4' ] ]
+verbose parsed url { pathname: '^2.0.0-alpha.4',
+verbose parsed url   path: '^2.0.0-alpha.4',
+verbose parsed url   href: '^2.0.0-alpha.4' }
+verbose addNamed [ 'handlebars', '^2.0.0-alpha.4' ]
+verbose addNamed [ null, null ]
+info addNameTag [ 'handlebars', '^2.0.0-alpha.4' ]
+verbose cache add [ 'marked@^0.3.2', null ]
+silly cache add: name, spec, args [ undefined, 'marked@^0.3.2', [ 'marked@^0.3.2', null ] ]
+verbose parsed url { pathname: 'marked@^0.3.2',
+verbose parsed url   path: 'marked@^0.3.2',
+verbose parsed url   href: 'marked@^0.3.2' }
+silly cache add: name, spec, args [ 'marked', '^0.3.2', [ 'marked', '^0.3.2' ] ]
+verbose parsed url { pathname: '^0.3.2', path: '^0.3.2', href: '^0.3.2' }
+verbose addNamed [ 'marked', '^0.3.2' ]
+verbose addNamed [ null, null ]
+info addNameTag [ 'marked', '^0.3.2' ]
+verbose cache add [ 'cheerio@~0.17.0', null ]
+silly cache add: name, spec, args [ undefined, 'cheerio@~0.17.0', [ 'cheerio@~0.17.0', null ] ]
+verbose parsed url { pathname: 'cheerio@~0.17.0',
+verbose parsed url   path: 'cheerio@~0.17.0',
+verbose parsed url   href: 'cheerio@~0.17.0' }
+silly cache add: name, spec, args [ 'cheerio', '~0.17.0', [ 'cheerio', '~0.17.0' ] ]
+verbose parsed url { pathname: '~0.17.0', path: '~0.17.0', href: '~0.17.0' }
+verbose addNamed [ 'cheerio', '~0.17.0' ]
+verbose addNamed [ null, '>=0.17.0- <0.18.0-' ]
+silly name, range, hasData [ 'cheerio', '>=0.17.0- <0.18.0-', false ]
+verbose cache add [ 'request@~2.30.0', null ]
+silly cache add: name, spec, args [ undefined, 'request@~2.30.0', [ 'request@~2.30.0', null ] ]
+verbose parsed url { pathname: 'request@~2.30.0',
+verbose parsed url   path: 'request@~2.30.0',
+verbose parsed url   href: 'request@~2.30.0' }
+silly cache add: name, spec, args [ 'request', '~2.30.0', [ 'request', '~2.30.0' ] ]
+verbose parsed url { pathname: '~2.30.0', path: '~2.30.0', href: '~2.30.0' }
+verbose addNamed [ 'request', '~2.30.0' ]
+verbose addNamed [ null, '>=2.30.0- <2.31.0-' ]
+silly name, range, hasData [ 'request', '>=2.30.0- <2.31.0-', false ]
+verbose raw, before any munging handlebars
+verbose url resolving [ 'http://registry.npmjs.org/', './handlebars' ]
+verbose url resolved http://registry.npmjs.org/handlebars
+http GET http://registry.npmjs.org/handlebars
+verbose raw, before any munging marked
+verbose url resolving [ 'http://registry.npmjs.org/', './marked' ]
+verbose url resolved http://registry.npmjs.org/marked
+http GET http://registry.npmjs.org/marked
+verbose raw, before any munging cheerio
+verbose url resolving [ 'http://registry.npmjs.org/', './cheerio' ]
+verbose url resolved http://registry.npmjs.org/cheerio
+http GET http://registry.npmjs.org/cheerio
+verbose raw, before any munging request
+verbose url resolving [ 'http://registry.npmjs.org/', './request' ]
+verbose url resolved http://registry.npmjs.org/request
+http GET http://registry.npmjs.org/request
+verbose raw, before any munging concat-stream
+verbose url resolving [ 'http://registry.npmjs.org/', './concat-stream' ]
+verbose url resolved http://registry.npmjs.org/concat-stream
+verbose etag "5ab2778a-c5d9"
+http GET http://registry.npmjs.org/concat-stream
+verbose cache add [ 'workshopper-jlord@^0.0.6', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'workshopper-jlord@^0.0.6',
+silly cache add: name, spec, args   [ 'workshopper-jlord@^0.0.6', null ] ]
+verbose parsed url { pathname: 'workshopper-jlord@^0.0.6',
+verbose parsed url   path: 'workshopper-jlord@^0.0.6',
+verbose parsed url   href: 'workshopper-jlord@^0.0.6' }
+silly cache add: name, spec, args [ 'workshopper-jlord',
+silly cache add: name, spec, args   '^0.0.6',
+silly cache add: name, spec, args   [ 'workshopper-jlord', '^0.0.6' ] ]
+verbose parsed url { pathname: '^0.0.6', path: '^0.0.6', href: '^0.0.6' }
+verbose addNamed [ 'workshopper-jlord', '^0.0.6' ]
+verbose addNamed [ null, null ]
+info addNameTag [ 'workshopper-jlord', '^0.0.6' ]
+verbose raw, before any munging github-oauth/0.0.4
+verbose url resolving [ 'http://registry.npmjs.org/', './github-oauth/0.0.4' ]
+verbose url resolved http://registry.npmjs.org/github-oauth/0.0.4
+verbose etag "5B0LYVSE36SR87GE9MHB8TLEA"
+http GET http://registry.npmjs.org/github-oauth/0.0.4
+verbose raw, before any munging workshopper-jlord
+verbose url resolving [ 'http://registry.npmjs.org/', './workshopper-jlord' ]
+verbose url resolved http://registry.npmjs.org/workshopper-jlord
+verbose etag "546fbfff-509f"
+http GET http://registry.npmjs.org/workshopper-jlord
+verbose raw, before any munging glob
+verbose url resolving [ 'http://registry.npmjs.org/', './glob' ]
+verbose url resolved http://registry.npmjs.org/glob
+verbose etag "5ad07458-20247"
+http GET http://registry.npmjs.org/glob
+http 200 http://registry.npmjs.org/marked
+silly get cb [ 200,
+silly get cb   { 'content-type': 'application/json; charset=UTF-8',
+silly get cb     server: 'UploadServer',
+silly get cb     'cache-control': 'max-age=300',
+silly get cb     'last-modified': 'Mon, 2 Apr 2018 7:28:34 GMT',
+silly get cb     etag: '"5ac1dba2-e216"',
+silly get cb     'x-npm-region': 'US-West',
+silly get cb     'content-length': '57878',
+silly get cb     'accept-ranges': 'bytes',
+silly get cb     date: 'Sat, 28 Apr 2018 08:36:43 GMT',
+silly get cb     via: '1.1 varnish',
+silly get cb     age: '1419',
+silly get cb     connection: 'keep-alive',
+silly get cb     'x-served-by': 'cache-sea1029-SEA',
+silly get cb     'x-cache': 'HIT',
+silly get cb     'x-cache-hits': '1',
+silly get cb     'x-timer': 'S1524904603.107700,VS0,VE2',
+silly get cb     vary: 'Accept-Encoding, Accept' } ]
+verbose mkdir (expected) error ENOENT, no such file or directory '/home/vagrant/.npm/marked'
+verbose mkdir done: /home/vagrant/.npm/marked 755
+verbose about to build /usr/local/lib/node_modules/git-it
+ERR! error installing git-it@1.6.9
+info unbuild /usr/local/lib/node_modules/git-it
+verbose from cache /usr/local/lib/node_modules/git-it/package.json
+info preuninstall git-it@1.6.9
+info uninstall git-it@1.6.9
+verbose unbuild git-it@1.6.9 [ true,
+verbose unbuild git-it@1.6.9   '/usr/local/lib/node_modules',
+verbose unbuild git-it@1.6.9   '/usr/local/lib/node_modules' ]
+verbose binRoot [ '/usr/local/bin', { 'git-it': './git-it.js' } ]
+info postuninstall git-it@1.6.9
+verbose installOne cb git-it@1.6.9
+ERR! Error: No compatible version found: marked@'^0.3.2'
+ERR! Valid install targets:
+ERR! ["0.0.1","0.0.2","0.0.3","0.0.4","0.0.5","0.0.6","0.0.7","0.0.8","0.0.9","0.1.0","0.1.1","0.1.2","0.1.3","0.1.4","0.1.5","0.1.6","0.1.7","0.1.8","0.1.9","0.2.0","0.2.1","0.2.2","0.2.2-1","0.2.3","0.2.4","0.2.4-1","0.2.5","0.2.6","0.2.7","0.2.8","0.2.9","0.2.10","0.3.0","0.3.1","0.3.2","0.3.3","0.3.4","0.3.5","0.3.6","0.3.7","0.3.9","0.3.12","0.3.13","0.3.14","0.3.15","0.3.16"]
+ERR!     at installTargetsError (/usr/share/npm/lib/cache.js:488:10)
+ERR!     at /usr/share/npm/lib/cache.js:375:15
+ERR!     at saved (/usr/share/npm/lib/utils/npm-registry-client/get.js:147:7)
+ERR!     at Object.oncomplete (/usr/lib/nodejs/graceful-fs.js:230:7)
+ERR! You may report this log at:
+ERR!     <http://bugs.debian.org/npm>
+ERR! or use
+ERR!     reportbug --attach /home/vagrant/npm-debug.log npm
+ERR! 
+ERR! System Linux 3.2.0-23-generic-pae
+ERR! command "node" "/usr/bin/npm" "install" "-g" "git-it"
+ERR! cwd /home/vagrant
+ERR! node -v v0.6.12
+ERR! npm -v 1.1.4
+ERR! message No compatible version found: marked@'^0.3.2'
+ERR! message Valid install targets:
+ERR! message ["0.0.1","0.0.2","0.0.3","0.0.4","0.0.5","0.0.6","0.0.7","0.0.8","0.0.9","0.1.0","0.1.1","0.1.2","0.1.3","0.1.4","0.1.5","0.1.6","0.1.7","0.1.8","0.1.9","0.2.0","0.2.1","0.2.2","0.2.2-1","0.2.3","0.2.4","0.2.4-1","0.2.5","0.2.6","0.2.7","0.2.8","0.2.9","0.2.10","0.3.0","0.3.1","0.3.2","0.3.3","0.3.4","0.3.5","0.3.6","0.3.7","0.3.9","0.3.12","0.3.13","0.3.14","0.3.15","0.3.16"]
+verbose exit [ 1, true ]
